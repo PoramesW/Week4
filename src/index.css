@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/* 
+ * Custom Styles for My Interest Website | J-Pop
+ * Built to enhance Bootstrap 5 with clean Japanese modern typography & music aesthetics
+ */
+
+:root {
+  --jp-font-sans: 'Plus Jakarta Sans', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--jp-font-sans);
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Typography Enhancements */
+.jp-font {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Card & Hover Effects */
+.artist-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.12), 0 4px 8px -4px rgba(15, 23, 42, 0.06);
+}
+
+.artist-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  background-color: #0f172a;
+}
+
+@media (min-width: 576px) {
+  .artist-img-wrapper {
+    height: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .artist-img-wrapper {
+    height: 230px;
+  }
+}
+
+.artist-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.artist-card:hover .artist-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Artist Accent Details */
+.accent-border-yoasobi {
+  border-top: 4px solid #2563eb !important;
+}
+
+.accent-border-lisa {
+  border-top: 4px solid #e11d48 !important;
+}
+
+.accent-border-back-number {
+  border-top: 4px solid #d97706 !important;
+}
+
+.accent-border-luna-haruna {
+  border-top: 4px solid #0284c7 !important;
+}
+
+/* Song List Group Items */
+.song-list-item {
+  transition: background-color 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.song-list-item:hover {
+  background-color: #f1f5f9;
+}
+
+.song-list-item.active-song {
+  border-left-color: currentColor;
+}
+
+/* Badges */
+.badge-soft {
+  background-color: rgba(241, 245, 249, 0.9);
+  color: #334155;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+}
+
+/* Clean Navbar Tweaks */
+.navbar-custom {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #0f172a;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+  background: radial-gradient(circle at 50% 0%, #f1f5f9 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e2e8f0;
+}

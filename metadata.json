@@ -1,0 +1,6 @@
+{
+  "name": "My Interest Website | J-Pop",
+  "description": "A personal J-Pop artist recommendation website built with Bootstrap 5, featuring YOASOBI, LiSA, back number, and Luna Haruna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
